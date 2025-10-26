@@ -15,7 +15,7 @@ in {
       users = {
         user = {
           isNormalUser = true;
-          password = 123123;
+          password = "123123";
           extraGroups = [ "wheel" ];
           createHome = true;
           home = "/home/user";
