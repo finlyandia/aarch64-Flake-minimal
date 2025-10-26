@@ -1,7 +1,7 @@
 {
   imports = [
     ../modules/hardware/default.nix
-    ../modules/users/default.nix
+    ../modules/user/default.nix
     ../modules/ssh/default.nix
   ];
   module = {
