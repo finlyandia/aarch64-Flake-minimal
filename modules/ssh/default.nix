@@ -9,11 +9,12 @@
 in {
   options.module.ssh.enable = mkEnableOption "";
   config = mkIf cfg.enable {
-  services.openssh = {
-    enable = true;
-    settings = {
-      PasswordAuthentication = true;
-      PermitRootLogin = "yes";
+    services.openssh = {
+      enable = true;
+      settings = {
+        PasswordAuthentication = true;
+        PermitRootLogin = "yes";
+      }; 
     };
   };
 }
