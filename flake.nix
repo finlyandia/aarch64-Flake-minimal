@@ -1,6 +1,6 @@
 {
-  inputs = {
 
+  inputs = {
     nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-unstable";
     }; 
@@ -8,7 +8,6 @@
     nixos-hardware = {
       url = "github:nixos/nixos-hardware";
     };
-
   };
 
   outputs = { 
@@ -28,4 +27,5 @@
       };
     };
   };
+
 }
