@@ -10,12 +10,16 @@
 in {
   options.module.user.enable = mkEnableOption "";
   config = mkIf cfg.enable {
+    services.displayManager.autoLogin = {
+      enable = true;
+      user = "user"; 
+    };
     users = { 
       mutableUsers = false;
       users = {
         user = {
           isNormalUser = true;
-          password = "123123";
+          password = "12345";
           extraGroups = [ "wheel" ];
           createHome = true;
           home = "/home/user";

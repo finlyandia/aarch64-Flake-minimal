@@ -13,7 +13,6 @@ in {
   config = mkIf cfg.enable {
     boot = {
       kernelPackages = pkgs.linuxKernel.packages.linux_rpi4;
-      initrd.availableKernelModules = [ "xhci_pci" "usbhid" "usb_storage" ];
       loader.generic-extlinux-compatible.enable = true;
     };
     fileSystems = {
